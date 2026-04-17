@@ -67,7 +67,6 @@ import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult
 import com.baidu.mapapi.search.sug.SuggestionSearch
 import com.baidu.mapapi.search.sug.SuggestionSearchOption
 import com.google.android.material.navigation.NavigationView
-import com.tencent.bugly.crashreport.CrashReport
 import kotlinx.coroutines.launch
 import moe.fuqiuluo.portal.android.permission.RequestPermissions
 import moe.fuqiuluo.portal.android.root.ShellUtils
@@ -157,7 +156,6 @@ class MainActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.theme_appbar_color)
         }
 
-        CrashReport.setUserSceneTag(this, 261771)
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.N) {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         }
